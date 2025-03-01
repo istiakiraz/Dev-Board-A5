@@ -34,8 +34,9 @@ document.getElementById('sub-box-01').addEventListener('click', function (event)
     addHistory.innerText = `You have Complete The Task Fix Mobile Button Issue at ${today.toLocaleString('en-BD', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })}`;
     save.appendChild(addHistory)
 
-    document.getElementById('sub-box-01').style.backgroundColor = 'gray'; 
-    document.getElementById('sub-box-01').removeEventListener('click', arguments.callee);
+    
+    this.disabled = true;
+    
 
     checkTaskCompletion();
 
@@ -68,8 +69,7 @@ document.getElementById('sub-box-02').addEventListener('click', function (event)
    addHistory.innerText = `You have Complete The Task Add Dark Mode at ${today.toLocaleString('en-BD', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })}`;
    save.appendChild(addHistory)
 
-   this.style.backgroundColor = "gray";
-   this.removeEventListener('click', arguments.callee)
+   this.disabled = true;
 
    checkTaskCompletion();
 
@@ -102,8 +102,7 @@ document.getElementById('sub-box-03').addEventListener('click', function (event)
    addHistory.innerText = `You have Complete The Task Optimize Home page at ${today.toLocaleString('en-BD', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })}`;
    save.appendChild(addHistory)
 
-   this.style.backgroundColor = "gray";
-   this.removeEventListener('click', arguments.callee)
+   this.disabled = true;
 
    checkTaskCompletion();
 
@@ -136,8 +135,7 @@ document.getElementById('sub-box-04').addEventListener('click', function (event)
    addHistory.innerText = `You have Complete The Task Add new emoji 🤲 at ${today.toLocaleString('en-BD', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })}`;
    save.appendChild(addHistory)
 
-   this.style.backgroundColor = "gray";
-   this.removeEventListener('click', arguments.callee)
+   this.disabled = true;
 
    checkTaskCompletion();
 
@@ -170,8 +168,7 @@ document.getElementById('sub-box-05').addEventListener('click', function (event)
    save.appendChild(addHistory)
 
 
-   this.style.backgroundColor = "gray";
-   this.removeEventListener('click', arguments.callee)
+   this.disabled = true;
 
    checkTaskCompletion();
 
@@ -206,8 +203,7 @@ document.getElementById('sub-box-06').addEventListener('click', function (event)
    save.appendChild(addHistory)
 
 
-   this.style.backgroundColor = "gray";
-   this.removeEventListener('click', arguments.callee)
+   this.disabled = true;
 
    checkTaskCompletion();
 

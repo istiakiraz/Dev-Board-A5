@@ -23,10 +23,10 @@ document.getElementById('discover').addEventListener('click', function(event){
 
 })
 
-document.getElementById('back-to-desk').addEventListener('click', function(event){
-    event.preventDefault();
+document.getElementById('back-to-desk').addEventListener('click', function (event) {
+    event.stopPropagation();
 
-    window.location.href="./index.html"
+    window.location.href = "./index.html"
 
 })
 
