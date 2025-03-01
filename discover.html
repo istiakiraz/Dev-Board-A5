@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <title>Dev Board</title>
 
+    <!-- poppins font linkup -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -27,6 +28,7 @@
 
 <body class="poppins-regular bg-[#F4F7FF] pt-6 content-center pb-6 ">
 
+    <!-- nav bar section -->
     <nav class="bg-white w-10/12 mx-auto rounded-2xl mb-4 ">
         <div class="w-11/12 flex items-center justify-between mx-auto pt-4 pb-4">
             <div class="flex items-center gap-2"> <img src="assets/logo.png" alt="">
@@ -38,8 +40,10 @@
         </div>
     </nav>
 
+    <!-- title tag -->
     <h1 class="font-bold text-center text-2xl mb-4">Blogs</h1>
-
+    
+    <!-- main feature section -->
     <section class=" w-10/12 mx-auto mb-4 space-y-4 ">
 
         <div class="bg-white rounded-xl ">
@@ -54,6 +58,7 @@
                 getElementsByClassName(), getElementsByTagName(), querySelector(), and querySelectorAll(). Some elements
                 are unique while querySelector() and querySelectorAll() allow flexible CSS-style selection.</p>
         </div>
+
         <div class="bg-white rounded-xl ">
             <h2 class="pt-4 pl-4 font-bold">Question-2: What is the difference between innerHTML, innerText, and
                 textContent?</h2>
@@ -68,6 +73,7 @@
                 HTML.
             </p>
         </div>
+
         <div class="bg-white rounded-xl ">
             <h2 class="pt-4 pl-4 font-bold">Question-3: What is event delegation in the DOM?</h2>
 
@@ -79,6 +85,7 @@
                 all child elements. It's works by just setting the event once on the parent instead of having a separate
                 event listener for each child.</p>
         </div>
+
         <div class="bg-white rounded-xl ">
             <h2 class="pt-4 pl-4 font-bold">Question-4: What is event bubbling in the DOM?</h2>
 
@@ -88,8 +95,10 @@
 
             <p class="pb-3 pl-4 text-gray-400">Event bubbling is a process in the DOM when an event triggered on a child
                 element then it moves to the parent element. This way the parent element can also catch the event of
-                <br> the child element.</p>
+                <br> the child element.
+            </p>
         </div>
+
         <div class="bg-white rounded-xl ">
             <h2 class="pt-4 pl-4 font-bold">Question-5: How do you create, add, and remove elements using JavaScript?
             </h2>
@@ -103,10 +112,9 @@
                 parent.removeChild(element).</p>
         </div>
 
-
     </section>
 
-
+    <!-- js linkup section -->
     <script>document.getElementById('back-to-desk').addEventListener('click', function (event) {
             event.stopPropagation();
 
@@ -114,7 +122,6 @@
 
         })
     </script>
-
     <script src="js/button.js"></script>
 
 </body>

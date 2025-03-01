@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <title>Dev Board</title>
 
+    <!-- poppins font linkup -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -50,10 +51,10 @@
         </div>
     </nav>
 
-    <section class=" md:w-10/12 w-11/12 space-x-4  mx-auto md:flex   ">
+    <section class=" md:w-10/12 w-11/12 space-x-4 md:grid md:grid-cols-4  mx-auto   ">
         <!-- main task section -->
 
-        <div class="bg-white md:w-[75.625rem]  md:mx-auto rounded-2xl mb-8 pb-7">
+        <div class="bg-white col-span-3  md:mx-auto rounded-2xl mb-8 pb-7">
             <!-- task header -->
 
             <div class="w-11/12 mx-auto flex justify-between gap-2 pt-3 pb-4 md:pt-6 md:pb-7 ">
@@ -64,8 +65,8 @@
                     <div class="rounded-[2rem] bg-white md:p-4 p-3"><img src="assets/checkbox.png" alt=""></div>
 
                     <div>
-                        <h3 class="md:text-lg text-sm  " >Task Assigned</h3>
-                        <h1 id="task-number" class="md:text-3xl text-xl font-bold">06</h1>
+                        <h3 class="md:text-lg text-sm  ">Task Assigned</h3>
+                        <h1 id="task-number" class="md:text-3xl text-xl font-bold">6</h1>
                     </div>
                 </div>
 
@@ -249,7 +250,7 @@
         </div>
 
         <!-- Activity Log section -->
-        <div class="bg-white rounded-2xl mx-auto justify-items-center space-y-4 md:w-[22.875rem] mb-8 pb-7 ">
+        <div class="bg-white rounded-2xl mx-auto justify-items-center space-y-4  mb-8 pb-7 ">
 
             <div class="pt-6 flex space-x-3 mb-3 ">
                 <img src="assets/activity.png" alt="">
@@ -265,16 +266,11 @@
             <div id="history">
             </div>
 
-
-
         </div>
 
-
     </section>
-
-
-
-
+ 
+    <!-- JS linkup section -->
     <script src="js/button.js"></script>
     <script src="js/time.js"></script>
     <script src="js/submit.js"></script>

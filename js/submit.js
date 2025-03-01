@@ -33,11 +33,8 @@ document.getElementById('sub-box-01').addEventListener('click', function (event)
     addHistory.classList.add("bg-[#F4F7FF]", "m-4" ,"p-4", "text-gray-500", "rounded-xl")
     addHistory.innerText = `You have Complete The Task Fix Mobile Button Issue at ${today.toLocaleString('en-BD', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })}`;
     save.appendChild(addHistory)
-
-    
+ 
     this.disabled = true;
-    
-
     checkTaskCompletion();
 
 })
@@ -70,7 +67,6 @@ document.getElementById('sub-box-02').addEventListener('click', function (event)
    save.appendChild(addHistory)
 
    this.disabled = true;
-
    checkTaskCompletion();
 
 })
@@ -103,7 +99,6 @@ document.getElementById('sub-box-03').addEventListener('click', function (event)
    save.appendChild(addHistory)
 
    this.disabled = true;
-
    checkTaskCompletion();
 
 })
@@ -136,7 +131,6 @@ document.getElementById('sub-box-04').addEventListener('click', function (event)
    save.appendChild(addHistory)
 
    this.disabled = true;
-
    checkTaskCompletion();
 
 })
@@ -171,9 +165,7 @@ document.getElementById('sub-box-05').addEventListener('click', function (event)
    this.disabled = true;
 
    checkTaskCompletion();
-
-   
-
+  
 })
 // box-06
 document.getElementById('sub-box-06').addEventListener('click', function (event) {
@@ -202,12 +194,8 @@ document.getElementById('sub-box-06').addEventListener('click', function (event)
    addHistory.innerText = `You have Complete The Task Improve Job searching at ${today.toLocaleString('en-BD', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })}`;
    save.appendChild(addHistory)
 
-
    this.disabled = true;
-
    checkTaskCompletion();
-
-
 
 })
 
