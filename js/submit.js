@@ -20,7 +20,7 @@ document.getElementById('sub-box-01').addEventListener('click', function (event)
     let total = convertTotalTask + 1;
     document.getElementById('total-task').innerText = total
 
-    if (convertTaskNumber >= 1) {
+    if (convertTaskNumber > 0) {
         let min = convertTaskNumber - 1;
         document.getElementById("task-number").innerText = min;
         alert('Board Updated Successfully')
@@ -55,7 +55,7 @@ document.getElementById('sub-box-02').addEventListener('click', function (event)
     let total = convertTotalTask + 1;
     document.getElementById('total-task').innerText = total
 
-   if(convertTaskNumber >= 1){
+   if(convertTaskNumber > 0){
     let min = convertTaskNumber - 1;
     document.getElementById("task-number").innerText = min;
     alert('Board Updated Successfully')
@@ -88,7 +88,7 @@ document.getElementById('sub-box-03').addEventListener('click', function (event)
     let total = convertTotalTask + 1;
     document.getElementById('total-task').innerText = total
 
-   if(convertTaskNumber >= 1){
+   if(convertTaskNumber > 0){
     let min = convertTaskNumber - 1;
     document.getElementById("task-number").innerText = min;
     alert('Board Updated Successfully')
@@ -121,7 +121,7 @@ document.getElementById('sub-box-04').addEventListener('click', function (event)
     let total = convertTotalTask + 1;
     document.getElementById('total-task').innerText = total
 
-   if(convertTaskNumber >= 1){
+   if(convertTaskNumber > 0){
     let min = convertTaskNumber - 1;
     document.getElementById("task-number").innerText = min;
     alert('Board Updated Successfully')
@@ -153,7 +153,7 @@ document.getElementById('sub-box-05').addEventListener('click', function (event)
     let total = convertTotalTask + 1;
     document.getElementById('total-task').innerText = total
 
-   if(convertTaskNumber >= 1){
+   if(convertTaskNumber > 0){
     let min = convertTaskNumber - 1;
     document.getElementById("task-number").innerText = min;
     alert('Board Updated Successfully')
@@ -188,7 +188,7 @@ document.getElementById('sub-box-06').addEventListener('click', function (event)
     let total = convertTotalTask + 1;
     document.getElementById('total-task').innerText = total
 
-   if(convertTaskNumber >= 1){
+   if(convertTaskNumber > 0){
     let min = convertTaskNumber - 1;
     document.getElementById("task-number").innerText = min;
     alert('Board Updated Successfully')
