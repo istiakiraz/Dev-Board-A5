@@ -11,19 +11,6 @@ function displayTodayDate() {
     document.getElementById("month-day-year").innerHTML = `${month} ${day} ${year}`;
 }
 
-
 window.onload = displayTodayDate;
 
-document.getElementById()
 
-
-        // function displayTodayDate(){
-        //     const todayDate = new Date();
-        //     const optionsDate = { 
-        //         weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' 
-        //     };
-
-        //     const formattedDated = todayDate.toLocaleDateString(undefined, optionsDate);
-
-        //     document.getElementById("date").innerText = `${formattedDated}`;
-        // }
