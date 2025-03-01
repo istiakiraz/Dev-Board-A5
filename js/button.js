@@ -9,8 +9,24 @@ document.getElementById('theme-btn').addEventListener('click', function(event){
 
 // clear button
 document.getElementById('Clear-btn').addEventListener('click', function(event){
-    event.stopPropagation();
+    event.preventDefault();
 
     document.getElementById('history').style.display = "none";
+})
+
+// discover button
+
+document.getElementById('discover').addEventListener('click', function(event){
+    event.preventDefault();
+
+    window.location.href="./discover.html"
+
+})
+
+document.getElementById('back-to-desk').addEventListener('click', function(event){
+    event.preventDefault();
+
+    window.location.href="./index.html"
+
 })
 

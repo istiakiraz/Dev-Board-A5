@@ -1,4 +1,12 @@
-let completedTasks = 0;
+function checkTaskCompletion() {
+    const taskNumber = document.getElementById('task-number').innerText;
+    const convertTaskNumber = parseInt(taskNumber);
+  
+    if (convertTaskNumber === 0) {
+      alert('Congrates!!! You have completed all the current task');
+    }
+  }
+
 // box-01
 document.getElementById('sub-box-01').addEventListener('click', function (event) {
     event.preventDefault();
@@ -29,6 +37,7 @@ document.getElementById('sub-box-01').addEventListener('click', function (event)
     document.getElementById('sub-box-01').style.backgroundColor = 'gray'; 
     document.getElementById('sub-box-01').removeEventListener('click', arguments.callee);
 
+    checkTaskCompletion();
 
 })
 
@@ -62,6 +71,8 @@ document.getElementById('sub-box-02').addEventListener('click', function (event)
    this.style.backgroundColor = "gray";
    this.removeEventListener('click', arguments.callee)
 
+   checkTaskCompletion();
+
 })
 
 // box -03
@@ -93,6 +104,8 @@ document.getElementById('sub-box-03').addEventListener('click', function (event)
 
    this.style.backgroundColor = "gray";
    this.removeEventListener('click', arguments.callee)
+
+   checkTaskCompletion();
 
 })
 
@@ -126,6 +139,8 @@ document.getElementById('sub-box-04').addEventListener('click', function (event)
    this.style.backgroundColor = "gray";
    this.removeEventListener('click', arguments.callee)
 
+   checkTaskCompletion();
+
 })
 // box-05
 document.getElementById('sub-box-05').addEventListener('click', function (event) {
@@ -154,14 +169,13 @@ document.getElementById('sub-box-05').addEventListener('click', function (event)
    addHistory.innerText = `You have Complete The Task Integrate OpenAI API at ${today.toLocaleString('en-BD', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })}`;
    save.appendChild(addHistory)
 
-   
 
    this.style.backgroundColor = "gray";
    this.removeEventListener('click', arguments.callee)
 
-   if (completedTasks === taskNumber) {
-    alert("All tasks are complete. All OK!");
-}
+   checkTaskCompletion();
+
+   
 
 })
 // box-06
@@ -195,24 +209,12 @@ document.getElementById('sub-box-06').addEventListener('click', function (event)
    this.style.backgroundColor = "gray";
    this.removeEventListener('click', arguments.callee)
 
-   if (0 === convertTaskNumber) {
-    alert("All tasks are complete. All OK!");
-}
+   checkTaskCompletion();
+
+
 
 })
 
-document.getElementById('task-number').addEventListener('input', function (event) {
-    event.preventDefault();
-
-    const taskNumber = document.getElementById('task-number').textContent;
-    const convertTaskNumber = parseInt(taskNumber);
-
-    if (convertTaskNumber === 0) {
-        setTimeout(() => {
-            alert("This is the second alert!");
-        }, 6000);
-    }
-});
 
 
 
