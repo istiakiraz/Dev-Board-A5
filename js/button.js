@@ -11,7 +11,8 @@ document.getElementById('theme-btn').addEventListener('click', function(event){
 document.getElementById('Clear-btn').addEventListener('click', function(event){
     event.preventDefault();
 
-    document.getElementById('history').style.display = "none";
+    document.getElementById('history').innerHTML = "";
+    
 })
 
 // discover button
@@ -23,10 +24,5 @@ document.getElementById('discover').addEventListener('click', function(event){
 
 })
 
-document.getElementById('back-to-desk').addEventListener('click', function (event) {
-    event.stopPropagation();
 
-    window.location.href = "./index.html"
-
-})
 
