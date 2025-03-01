@@ -25,7 +25,7 @@
 
 </head>
 
-<body class="poppins-regular bg-[#F4F7FF] pt-6">
+<body class="poppins-regular bg-[#F4F7FF] pt-6 content-center ">
 
     <!-- nav bar section -->
 
@@ -39,7 +39,7 @@
                  ">
                 <div class="bg-[#F4F7FF] rounded-[2rem] flex pr-5 pl-4 gap-4 items-center pt-1 pb-1  ">
                     <img src="assets/checkbox.png" alt="">
-                    <h2 class="text-[2rem] font-bold">23</h2>
+                    <h2 id="total-task" class="text-[2rem] font-bold">23</h2>
                 </div>
 
                 <div class="bg-[#F4F7FF] rounded-[2rem] p-[0.625rem]">
@@ -50,10 +50,10 @@
         </div>
     </nav>
 
-    <section class=" w-10/12 mx-auto space-x-10 flex  ">
+    <section class=" w-10/12 space-x-4  mx-auto flex   ">
         <!-- main task section -->
 
-        <div class="bg-white w-[75.625rem] rounded-2xl mb-8 pb-7">
+        <div class="bg-white w-[75.625rem]  mx-auto rounded-2xl mb-8 pb-7">
             <!-- task header -->
 
             <div class="w-11/12 mx-auto flex justify-between pt-6 pb-7 ">
@@ -65,7 +65,7 @@
 
                     <div>
                         <h3>Task Assigned</h3>
-                        <h1 class="text-3xl font-bold">05</h1>
+                        <h1 id="task-number" class="text-3xl font-bold">06</h1>
                     </div>
                 </div>
 
@@ -103,7 +103,7 @@
                 <!-- box-01 -->
                 <div class="bg-[#F4F7FF] rounded-xl p-5 space-y-3 ">
 
-                    <h3 class="bg-white p-2 rounded-xl w-[7.125rem] text-center">ShopEase</h3>
+                    <h3 class="bg-white p-2 rounded-xl  w-[7.125rem] text-center">ShopEase</h3>
                     <h1 class="font-semibold text-2xl">Fix Mobile Button Issue </h1>
 
                     <p class=" bg-white rounded-xl p-3 pt-4 text-gray-400 mb-3">Debug using Chrome DevTools, <br> check
@@ -118,7 +118,7 @@
                             <p>Deadline</p>
                             <h3 class="font-bold">21 March 2025</h3>
                         </div>
-                        <button class="btn text-white bg-[#3752FD]">Completed</button>
+                        <button id="sub-box-01" class="btn text-white bg-[#3752FD]">Completed</button>
 
                     </div>
 
@@ -142,7 +142,7 @@
                             <p>Deadline</p>
                             <h3 class="font-bold">21 March 2025</h3>
                         </div>
-                        <button class="btn text-white bg-[#3752FD]">Completed</button>
+                        <button id="sub-box-02" class="btn text-white bg-[#3752FD]">Completed</button>
 
                     </div>
 
@@ -166,7 +166,7 @@
                             <p>Deadline</p>
                             <h3 class="font-bold">21 March 2025</h3>
                         </div>
-                        <button class="btn text-white bg-[#3752FD]">Completed</button>
+                        <button id="sub-box-03" class="btn text-white bg-[#3752FD]">Completed</button>
 
                     </div>
 
@@ -190,7 +190,7 @@
                             <p>Deadline</p>
                             <h3 class="font-bold">21 March 2025</h3>
                         </div>
-                        <button class="btn text-white bg-[#3752FD]">Completed</button>
+                        <button id="sub-box-04" class="btn text-white bg-[#3752FD]">Completed</button>
 
                     </div>
 
@@ -214,7 +214,7 @@
                             <p>Deadline</p>
                             <h3 class="font-bold">21 March 2025</h3>
                         </div>
-                        <button class="btn text-white bg-[#3752FD]">Completed</button>
+                        <button id="sub-box-05" class="btn text-white bg-[#3752FD]">Completed</button>
 
                     </div>
 
@@ -238,7 +238,7 @@
                             <p>Deadline</p>
                             <h3 class="font-bold">21 March 2025</h3>
                         </div>
-                        <button class="btn text-white bg-[#3752FD]">Completed</button>
+                        <button id="sub-box-06" class="btn text-white bg-[#3752FD]">Completed</button>
 
                     </div>
 
@@ -249,21 +249,21 @@
         </div>
 
         <!-- Activity Log section -->
-        <div class="bg-white rounded-2xl  mx-auto justify-items-center space-y-4 w-[22.875rem] mb-8 pb-7 ">
+        <div class="bg-white rounded-2xl mx-auto justify-items-center space-y-4 w-[22.875rem] mb-8 pb-7 ">
 
             <div class="pt-6 flex space-x-3 mb-4 ">
                 <img src="assets/activity.png" alt="">
                 <h2 class="font-semibold">Activity Log</h2>
             </div>
 
-            <button class="btn text-white bg-[#3752FD]">Clear History</button>
+            <button id="Clear-btn" class="btn text-white bg-[#3752FD]">Clear History</button>
 
             <div class="border-b-2 border-dashed border-gray-300 mb-3 w-full h-4">
                 <h1> </h1>
             </div>
 
-            <p class="bg-[#F4F7FF] m-4 p-4 text-gray-500 rounded-xl">You have Complete The Task Add Dark Mode at
-                12:48:15 PM</p>
+            <div id="history" >
+            </div>
 
 
 
@@ -276,6 +276,7 @@
 
     <script src="js/button.js"></script>
     <script src="js/time.js"></script>
+    <script src="js/submit.js"></script>
 
 
 </body>

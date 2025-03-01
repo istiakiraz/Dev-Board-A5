@@ -1,3 +1,4 @@
+// theme button
 document.getElementById('theme-btn').addEventListener('click', function(event){
     event.preventDefault();
 
@@ -5,3 +6,11 @@ document.getElementById('theme-btn').addEventListener('click', function(event){
     document.body.style.backgroundColor = randomColor;
 
 })
+
+// clear button
+document.getElementById('Clear-btn').addEventListener('click', function(event){
+    event.stopPropagation();
+
+    document.getElementById('history').style.display = "none";
+})
+

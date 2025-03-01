@@ -12,9 +12,9 @@ function displayTodayDate() {
 }
 
 
-
-
 window.onload = displayTodayDate;
+
+document.getElementById()
 
 
         // function displayTodayDate(){
